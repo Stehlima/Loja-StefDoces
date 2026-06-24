@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             text += `\n*TOTAL:* ${catalogTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
             
-            const phoneNumber = "5511967407160";
+            const phoneNumber = "5511990056964";
             const encodedText = encodeURIComponent(text);
             const waUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
             
