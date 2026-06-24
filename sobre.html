@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nossa História - Stef Doces Brigadeiros Artesanais">
+    <title>Sobre Nós | Stef Doces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Stef Doces <span>Brigadeiros</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="sobre.html" style="color: var(--clr-primary-dark); font-weight: 600;">Sobre Mim</a>
+                <a href="index.html#servicos">Serviços</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section" style="padding: 120px 0 60px;">
+        <div class="container about-content">
+            <div class="about-image" style="text-align: center;">
+                <!-- PHOTO PLACEHOLDER: USER's ATTACHMENT -->
+                <div class="image-wrapper" style="position: relative; display: inline-block;">
+                    <img src="assets/images/stephany_lima.jpg" alt="Stephany Lima de Mattos - Stef Doces" style="width:100%; max-width: 450px; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                    <div style="position: absolute; bottom: 20px; right: -20px; background: white; padding: 10px 20px; border-radius: 50px; box-shadow: var(--shadow-sm); font-weight: 600; color: var(--clr-primary-dark);">Fundada em Dez/2024</div>
+                </div>
+            </div>
+            <div class="about-text" style="padding: 2rem 0;">
+                <h1 style="font-size: 2.8rem; margin-bottom: 1.5rem; color: var(--clr-primary-dark);">Nossa História</h1>
+                <p style="font-size: 1.15rem; color: var(--clr-text-main); margin-bottom: 1.3rem;">
+                    Olá! Eu sou a <strong>Stephany Lima de Mattos</strong>, uma jovem sonhadora que encontrou na confeitaria a sua verdadeira paixão.
+                </p>
+                <p style="font-size: 1.15rem; color: var(--clr-text-muted); margin-bottom: 1.3rem;">
+                    O meu amor por fazer doces, especialmente o nosso brasileiríssimo brigadeiro, sempre adoçou a vida da minha família e dos meus amigos. Esse sonho de levar afeto em formato de doces começou a tomar proporções maiores e, em <strong>Dezembro de 2024</strong>, eu comecei o meu próprio negócio, a <strong>Stef Doces</strong>.
+                </p>
+                <p style="font-size: 1.15rem; color: var(--clr-text-muted); margin-bottom: 2rem;">
+                    Cada brigadeiro é feito à mão, com muito carinho, ingredientes selecionados e um processo artesanal focado em qualidade absoluta. Meu objetivo é continuar adoçando vidas e transformar pequenas comemorações em lembranças inesquecíveis.
+                </p>
+                <a href="index.html?chat=1" class="btn btn-primary btn-large">Ver Cardápio & Falar com a Assistente</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        @media(max-width: 900px) {
+            .about-content { grid-template-columns: 1fr; text-align: center; }
+            .about-text { padding-top: 0 !important; }
+            .image-wrapper div { right: 50%; transform: translateX(50%); bottom: -15px; width: 80%; }
+        }
+    </style>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="brand">
+                <p class="logo-footer">Stef Doces B2B</p>
+                <p>Brigadeiros com paixão e arte.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/stef.doces/" target="_blank">Instagram (@stef.doces)</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

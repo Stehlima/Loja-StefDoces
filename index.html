@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stef Doces - Brigadeiros Artesanais. Encomendas para eventos, casamentos e mimos corporativos.">
+    <title>Stef Doces | Brigadeiros Artesanais</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                Stef Doces <span>Brigadeiros</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#servicos">Serviços</a>
+                <a href="sobre.html">Sobre a Stef</a>
+                <button class="btn btn-outline" id="open-chat-header">Solicite um Orçamento</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Mais do que delicioso.</h1>
+            <p class="hero-subtitle">Brigadeiros Artesanais para todos os momentos. Transforme seu evento, casamento ou ação corporativa com o verdadeiro sabor do brigadeiro premium.</p>
+            <button class="btn btn-primary btn-large" id="open-hero-chat">
+                Solicite um Orçamento <i data-lucide="arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Expertise</h2>
+                <p>Catálogos exclusivos e atendimento personalizado para diferentes escalas de eventos.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Casamentos -->
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="assets/images/casamentos.png" alt="Mesa de doces finos para casamento">
+                        <div class="card-badge">Premium</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Eventos & Casamentos</h3>
+                        <p>Caixas em grande escala com sabores clássicos (Morango, Churros) e Premium (Pistache) para o seu dia especial.</p>
+                    </div>
+                </article>
+
+                <!-- Kits Corporativos -->
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="assets/images/corporativo.png" alt="Kits corporativos e brindes finos">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mimos & Presentes</h3>
+                        <p>Caixinhas com 4 ou 6 unidades perfeitas para presentear colaboradores e clientes com um toque de afeto.</p>
+                    </div>
+                </article>
+
+                <!-- Eventos de Grande Porte -->
+                <article class="service-card">
+                    <div class="card-image">
+                        <img src="assets/images/grande_porte.png" alt="Ilha de sobremesas para grandes eventos">
+                    </div>
+                    <div class="card-content">
+                        <h3>Festas & Aniversários</h3>
+                        <p>Alegria garantida em caixas de 25, 50 ou 100 unidades com os sabores clássicos que todo mundo ama.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech & Automation Spotlight -->
+    <section id="diferencial" class="tech-spotlight">
+        <div class="container tech-content">
+            <div class="tech-text">
+                <h2>Atendimento Inteligente e Dinâmico</h2>
+                <p>Sabemos que organizar eventos envolve incontáveis decisões. Por isso, simplificamos o primeiro contato através da automação.</p>
+                <ul class="tech-list">
+                    <li><i data-lucide="zap"></i> Qualificação instantânea de prioridades.</li>
+                    <li><i data-lucide="database"></i> Integração direta com nosso sistema CRM.</li>
+                    <li><i data-lucide="clock"></i> Envio rápido de propostas ajustadas à sua demanda.</li>
+                </ul>
+            </div>
+            <div class="tech-graphic">
+                <div class="mockup-window">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="message received">Olá! Como podemos ajudar com seu evento hoje?</div>
+                        <div class="message sent">Preciso de doces para um evento corporativo com 500 pessoas.</div>
+                        <div class="message received typing"><span></span><span></span><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="brand">
+                <p class="logo-footer">Stef Doces B2B</p>
+                <p>Elevando as experiências em alta escala.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/stef.doces/" target="_blank">Instagram (@stef.doces)</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <!-- Floating Button -->
+        <button id="chat-toggle" class="chat-toggle-btn" aria-label="Abrir assistente virtual">
+            <i data-lucide="message-square"></i>
+            <span class="badge">1</span>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div>
+                    <h4>Assistente Virtual</h4>
+                    <p>Atendimento Rápido</p>
+                </div>
+                <button id="chat-close" class="chat-close" aria-label="Fechar chat"><i data-lucide="x"></i></button>
+            </div>
+            
+            <div id="chat-messages" class="chat-body">
+                <!-- Messages will be injected here via JS -->
+            </div>
+            
+            <div id="chat-input-area" class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Digite sua resposta..." disabled>
+                <button id="chat-send" disabled><i data-lucide="send"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catalog Modal -->
+    <div id="catalog-modal" class="catalog-modal hidden">
+        <div class="catalog-modal-content">
+            <button id="close-catalog" class="close-catalog" aria-label="Fechar catálogo"><i data-lucide="x"></i></button>
+            <div class="catalog-header">
+                <h2>Cardápio Stef Doces</h2>
+                <p>Sabores Tradicionais: Tradicional, Churros, Morango, Beijinho.<br>Sabores Premium: Pistache, Chocolate Branco.</p>
+            </div>
+            
+            <div class="catalog-grid" style="display:flex; flex-direction:column; gap: 1.5rem;">
+                
+                <div class="configurator-box">
+                    <div class="config-row">
+                        <div class="config-field">
+                            <label for="flavor-select">1. Escolha o Sabor</label>
+                            <select id="flavor-select" class="form-select">
+                                <optgroup label="Sabores Tradicionais">
+                                    <option value="tradicional" data-premium="false">Brigadeiro Tradicional</option>
+                                    <option value="churros" data-premium="false">Churros</option>
+                                    <option value="morango" data-premium="false">Morango (Bicho de pé)</option>
+                                    <option value="beijinho" data-premium="false">Beijinho</option>
+                                </optgroup>
+                                <optgroup label="Sabores Premium">
+                                    <option value="pistache" data-premium="true">Pistache</option>
+                                    <option value="branco" data-premium="true">Chocolate Branco</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="config-field">
+                            <label for="size-select">2. Quantidade</label>
+                            <select id="size-select" class="form-select">
+                                <option value="4">Caixa Mimo c/ 4 unid.</option>
+                                <option value="6">Caixa Presente c/ 6 unid.</option>
+                                <option value="25" selected>Caixa Festa c/ 25 unid.</option>
+                                <option value="50">Caixa Festa c/ 50 unid.</option>
+                                <option value="100">Caixa Evento c/ 100 unid.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="config-action">
+                        <div class="price-preview">Valor da Escolha: <strong id="box-price">R$ 0,00</strong></div>
+                        <button id="btn-add-cart" class="btn btn-outline" style="min-width: 150px; justify-content: center;">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="cart-section">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--clr-primary-dark);">Sua Seleção:</h4>
+                    <div id="cart-items" class="cart-items-list">
+                        <!-- Itens vão aparecer aqui -->
+                        <p class="empty-cart-msg">Nenhum item adicionado à sua lista ainda.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="catalog-footer-action">
+                <div class="total-estimated">
+                    <span>Estimativa Promocional:</span>
+                    <strong id="catalog-total">R$ 0,00</strong>
+                </div>
+                <button id="send-whatsapp" class="btn btn-primary" disabled>
+                    <i data-lucide="phone"></i> Validar no WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
